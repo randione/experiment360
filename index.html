@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <script src="https://cdn.scaleflex.it/plugins/js-cloudimage-360-view/2.4.1/js-cloudimage-360-view.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0
+        }
+        
+        h3 {
+            padding-bottom: 15px;
+            text-align: center;
+        }
+        
+        body {
+            background: #192520;
+            font-family: 'Poppins', sans-serif;
+            color: white;
+            text-shadow: 1px 1px 1px black;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+        
+        .custom-file-container {
+            max-width: 70%;
+            margin: 100px auto;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <div class="custom-file-container" data-upload-id="myUniqueUploadId">
+        <h3>RING 360 VIEW EXPERIMENTAL</h3>
+        <div id="mercedes-360-view" class="cloudimage-360" data-folder="images/" data-filename="product-{index}.png" data-amount="100" data-magnifier="2"></div>
+    </div>
+    <script>
+        window.CI360.init();
+    </script>
+</body>
+
+</html>
